@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_margin="8dp"
+        android:text="No. of peaple:"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/increase_btn"
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_dialog_btn"
+            android:text="+"
+            android:onClick="book"/>
+
+        <TextView
+            android:id="@+id/no_of_peaple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/decrease_btn"
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_dialog_btn"
+            android:text="-"
+            android:onClick="book"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_margin="8dp"
+        android:text="No. of night:"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/increase2_btn"
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_dialog_btn"
+            android:text="+"
+            android:onClick="book"/>
+
+        <TextView
+            android:id="@+id/no_of_night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_gravity="center"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/decrease2_btn"
+            android:layout_width="40sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_dialog_btn"
+            android:text="-"
+            android:onClick="book"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/the_cost_per_night"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="cost/night : 0 "
+       android:layout_margin="8dp"
+        />
+    <TextView
+        android:id="@+id/total_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="total cost : 0 "
+        android:layout_margin="8dp"
+        />
+</LinearLayout>

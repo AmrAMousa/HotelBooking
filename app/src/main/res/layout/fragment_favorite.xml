@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavoriteFragment">
+
+    <ProgressBar
+        android:id="@+id/progress_bar_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:indeterminateTint="@color/colorPrimaryDark"/>
+    <TextView
+        android:id="@+id/empty_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:hint="Favorites\n is empty"
+        android:textSize="42dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="invisible"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/hotels_recyclerView_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingBottom="?attr/actionBarSize"
+        android:paddingTop="?attr/actionBarSize"/>
+    <EditText
+        android:id="@+id/search_faild_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:hint="Search in favorite..."
+        android:background="@drawable/search_faild_design"
+        android:layout_margin="8dp"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:padding="8dp"
+        android:elevation="8dp"
+        android:enabled="false"
+        />
+</FrameLayout>
